@@ -1,5 +1,6 @@
 ﻿namespace Onion.Application.Features.CQRS.Results
 {
-    public record GetCategoryQueryResult(Guid id,string CategoryName);
+    public record GetCategoryQueryResult(Guid CategoryId, string CategoryName);
+ 
  
 }

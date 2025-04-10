@@ -1,6 +1,5 @@
 ﻿using Microsoft.Extensions.DependencyInjection;
 using Onion.Application.Features.CQRS.Handlers;
-using Onion.Application.Interfaces;
 
 namespace Onion.Application.Extensions
 {
@@ -12,6 +11,10 @@ namespace Onion.Application.Extensions
             services.AddAutoMapper(typeof(ServiceRegistrations).Assembly);
 
             services.AddScoped<GetCategoryQueryHandler>();
+            services.AddScoped<GetCategoryByIdQueryHandler>();
+            services.AddScoped<CreateCategoryCommandHandler>();
+            services.AddScoped<UpdateCategoryCommandHandler>();
+            services.AddScoped<RemoveCategoryCommandHandler>();
 
         }
 
