@@ -1,5 +1,4 @@
-﻿using Microsoft.AspNetCore.Http;
-using Microsoft.AspNetCore.Mvc;
+﻿using Microsoft.AspNetCore.Mvc;
 using Onion.Application.Features.CQRS.Commands;
 using Onion.Application.Features.CQRS.Handlers;
 using Onion.Application.Features.CQRS.Queries;
